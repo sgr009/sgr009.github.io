@@ -79,7 +79,7 @@ h1 .role{display:block;background:linear-gradient(135deg,var(--cyan) 0%,var(--bl
 section{padding:90px 0;border-top:1px solid var(--border)}
 
 /* ABOUT */
-#about .about-grid{display:grid;grid-template-columns:1fr 1.6fr;gap:60px;align-items:start}
+#about .about-grid{display:grid;grid-template-columns:.9fr 1.7fr;gap:40px;align-items:start}
 .photo-placeholder{aspect-ratio:3/4;border-radius:16px;background:var(--card);border:2px dashed var(--border-hi);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;color:var(--muted);font-size:13px;position:relative;overflow:hidden;padding:0}
 .photo-placeholder::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(0,229,255,.04),transparent 60%)}
 .photo-icon{font-size:48px}
@@ -283,13 +283,22 @@ footer em{color:var(--muted);font-style:normal}
       <div class="about-content">
         <h3 class="reveal">Engineering the infrastructure and tools that scale networks.</h3>
         <p class="reveal reveal-delay-1">
-          I'm a <strong>Network Planning & Design Engineer</strong> who builds the systems that turn complex network data into actionable decisions. After almost 2 years of optimizing operations at Network Operations Center, I moved into Network Planning & Design to design infrastructure and create the internal tooling that powers network planning workflows.
+          I build the systems that turn complex network data into fast, actionable decisions.
         </p>
         <p class="reveal reveal-delay-2">
-          I independently build and maintain <strong>production Streamlit platforms</strong> for Feasibility analysis lifecycle management, link monitoring, geospatial analysis, and work-order tracking. On the infrastructure side, I design and deploy <strong>Proxmox environments</strong>, manage VM logical networking, and ensure these tools scale reliably.
+          After nearly two years in the Network Operations Center, optimizing live network operations, I moved into Network Planning &amp; Design to design infrastructure and the tools behind smarter network decisions.
         </p>
         <p class="reveal reveal-delay-3">
-          I believe infrastructure should be invisible. Every tool I build prioritizes speed, reliability, and the experience of the people using it. My work has directly reduced manual reporting time by 75% across multiple teams and eliminated repetitive operational friction.
+          Today, I develop production-grade Streamlit platforms for feasibility analysis, geospatial intelligence, link monitoring, and workflow automation, while also architecting scalable Proxmox VE environments and virtual infrastructure.
+        </p>
+        <p class="reveal reveal-delay-4">
+          My experience spans National Transmission Network (NTTN), International Internet Gateway (IIG) operations, and related carrier-grade infrastructure, giving me hands-on insight into how data flows across backbone, metro, and cross-border networks. This deep understanding of physical and logical layers informs every tool I build.
+        </p>
+        <p class="reveal reveal-delay-4">
+          My focus is simple: build systems that make complex work feel effortless.
+        </p>
+        <p class="reveal reveal-delay-4">
+          The result: solutions that have reduced manual reporting by 75% and helped teams move faster with confidence.
         </p>
         <div class="info-pills reveal reveal-delay-4">
           <div class="info-pill"><span>📍</span><span>Bangladesh</span></div>
@@ -541,17 +550,29 @@ footer em{color:var(--muted);font-style:normal}
     <h2 class="s-title reveal">Awards & Certifications</h2>
     <p class="s-sub reveal">Academic recognition and professional certifications earned.</p>
     <div class="awards-grid">
-      <div class="award-card reveal">
+      <div class="award-card reveal" style="border-color:rgba(0,229,255,.3);background:linear-gradient(135deg,rgba(0,229,255,.05) 0%,var(--card) 60%);position:relative;overflow:hidden;">
+        <div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--cyan),transparent);"></div>
+        <div class="award-icon">🎓</div>
+        <div class="award-title" style="font-size:16px;color:var(--cyan)">Master of Science - Electrical &amp; Computer Engineering</div>
+        <div class="award-body">
+          <strong style="color:var(--text);display:block;margin-bottom:6px">Toronto Metropolitan University · Canada</strong>
+          Completed a graduate-level MSc in Electrical and Computer Engineering with a specialisation certification in
+          <strong style="color:var(--text)">Artificial Intelligence</strong>. Graduate study in Canada, combining advanced
+          engineering foundations with applied AI, directly informing the intelligent tooling and data-driven systems
+          built in a professional engineering context.
+        </div>
+      </div>
+      <div class="award-card reveal reveal-delay-1">
         <div class="award-icon">🏆</div>
         <div class="award-title">2nd Position, Best Poster</div>
         <div class="award-body">Dr. Anwarul Abedin Scholar Grant · 2nd International Conference on Robotics, Electrical and Signal Processing Techniques (ICREST'21) · January 2021 · IEEE Bangladesh</div>
       </div>
-      <div class="award-card reveal reveal-delay-1">
+      <div class="award-card reveal reveal-delay-2">
         <div class="award-icon">📜</div>
         <div class="award-title">Research Paper Publication</div>
         <div class="award-body">Published in IEEE Xplorer: "An IoT Based Smart Irrigation System" · Demonstrating applied research capabilities in IoT and embedded systems. Link: https://ieeexplore.ieee.org/document/9331092 </div>
       </div>
-      <div class="award-card reveal reveal-delay-2">
+      <div class="award-card reveal reveal-delay-3">
         <div class="award-icon">⚡</div>
         <div class="award-title">Certification: Lightning & Electrical Surge Protection</div>
         <div class="award-body">Grounding, Bonding, Training · nVent ERICO (USA) at Bangladesh Air Force Base · August 2019</div>
