@@ -8,6 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@600;700&family=IBM+Plex+Mono:wght@400;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
 <style>
 :root {
   --bg:        #050b18;
@@ -252,7 +253,7 @@ footer em{color:var(--muted);font-style:normal}
     </h1>
     <p class="hero-desc">
       I work in <strong style="color:var(--text)">Network Planning &amp; Design</strong>, and I build the internal tools that power it.
-      From interactive topology dashboards to SSH automation platforms and server-side VM infrastructure ,
+      From interactive topology dashboards and inventory management systems to SSH automation platforms and server-side VM infrastructure,
       I turn complex network data into decisions.
     </p>
     <div class="hero-actions">
@@ -289,7 +290,7 @@ footer em{color:var(--muted);font-style:normal}
           After nearly two years in the Network Operations Center, optimizing live network operations, I moved into Network Planning &amp; Design to design infrastructure and the tools behind smarter network decisions.
         </p>
         <p class="reveal reveal-delay-3">
-          Today, I develop production-grade Streamlit platforms for feasibility analysis, geospatial intelligence, link monitoring, and workflow automation, while also architecting scalable Proxmox VE environments and virtual infrastructure.
+          Today, I develop production-grade Streamlit platforms for feasibility analysis, geospatial intelligence, link monitoring, inventory management, and workflow automation, while also architecting scalable Proxmox VE environments and virtual infrastructure.
         </p>
         <p class="reveal reveal-delay-4">
           My experience spans National Transmission Network (NTTN), International Internet Gateway (IIG) operations, and related carrier-grade infrastructure, giving me hands-on insight into how data flows across backbone, metro, and cross-border networks. This deep understanding of physical and logical layers informs every tool I build.
@@ -301,12 +302,12 @@ footer em{color:var(--muted);font-style:normal}
           The result: solutions that have reduced manual reporting by 75% and helped teams move faster with confidence.
         </p>
         <div class="info-pills reveal reveal-delay-4">
-          <div class="info-pill"><span>📍</span><span>Bangladesh</span></div>
-          <div class="info-pill"><span>📍</span><span>Canada</span></div>
-          <div class="info-pill"><span>🏢</span><span>Network Planning & Design</span></div>
-          <div class="info-pill"><span>🐍</span><span>Python · Streamlit</span></div>
-          <div class="info-pill"><span>🖥️</span><span>Proxmox · VMs</span></div>
-          <div class="info-pill"><span>📡</span><span>Network Engineering</span></div>
+          <div class="info-pill"><span><i class="fas fa-location-dot"></i></span><span>Bangladesh</span></div>
+          <div class="info-pill"><span><i class="fas fa-location-dot"></i></span><span>Canada</span></div>
+          <div class="info-pill"><span><i class="fas fa-building"></i></span><span>Network Planning & Design</span></div>
+          <div class="info-pill"><span><i class="fab fa-python"></i></span><span>Python · Streamlit</span></div>
+          <div class="info-pill"><span><i class="fas fa-server"></i></span><span>Proxmox · VMs</span></div>
+          <div class="info-pill"><span><i class="fas fa-satellite-dish"></i></span><span>Network Engineering</span></div>
         </div>
       </div>
     </div>
@@ -394,9 +395,8 @@ footer em{color:var(--muted);font-style:normal}
 
       <div class="p-card featured" style="--ac:#7c3aed" data-cat="platform">
         <div class="p-left">
-          <div class="p-top"><div class="p-icon">🧭</div><span class="p-badge b-platform">Platform</span></div>
-          <div class="feat-badge">★ Featured · Multi-module Platform</div>
-          <div class="p-title">Compass</div>
+          <div class="p-top"><div class="p-icon"><i class="fas fa-compass"></i></div><div class="p-title" style="flex:1;margin:0 0 0 12px;font-size:17px">Compass</div><span class="p-badge b-platform">Platform</span></div>
+          <div class="feat-badge"><i class="fas fa-star" style="font-size:9px;color:var(--violet)"></i> Featured · Multi-module Platform</div>
           <div class="p-desc">Full network intelligence platform providing Feasibility analysis lifecycle management, interactive topology visualisation, and multi-hop path analysis. Built as a modular multi-page Streamlit app with Leaflet geo-maps and a NetworkX graph engine , actively used in daily operations.</div>
           <div class="p-tags"><span class="tag">Streamlit</span><span class="tag">NetworkX</span><span class="tag">PyVis</span><span class="tag">Leaflet</span><span class="tag">GeoPy</span><span class="tag">Data Processing</span><span class="tag">Database</span><span class="tag">Pydeck</span></div>
         </div>
@@ -410,65 +410,74 @@ footer em{color:var(--muted);font-style:normal}
         </div>
       </div>
 
+      <div class="p-card featured" style="--ac:#10b981" data-cat="platform">
+        <div class="p-left">
+          <div class="p-top"><div class="p-icon"><i class="fas fa-boxes-stacked"></i></div><div class="p-title" style="flex:1;margin:0 0 0 12px;font-size:17px">Inventory Management System (IMS)</div><span class="p-badge b-platform">Platform</span></div>
+          <div class="feat-badge"><i class="fas fa-star" style="font-size:9px;color:var(--green)"></i> Featured · Full-stack Business Platform</div>
+          <div class="p-desc">Full-featured inventory and order management platform with product CRUD, stock tracking, order lifecycle, analytics, expense tracking, receipt generation, and courier integration — all backed by SQLite.</div>
+          <div class="p-tags"><span class="tag">Streamlit</span><span class="tag">SQLite</span><span class="tag">Pandas</span><span class="tag">Plotly</span><span class="tag">Pillow</span><span class="tag">FPDF</span><span class="tag">python-docx</span><span class="tag">PyMuPDF</span><span class="tag">Selenium</span></div>
+        </div>
+        <div class="p-right">
+          <div class="module-list">
+            <div class="module-row"><div class="m-dot" style="background:#34d399"></div><div><div class="m-name">Inventory & Stock</div><div class="m-desc">Product CRUD, low stock alerts, stock history logging, and image management with automatic cropping</div></div></div>
+            <div class="module-row"><div class="m-dot" style="background:#60a5fa"></div><div><div class="m-name">Order Management</div><div class="m-desc">Order lifecycle with status tracking, order presets, and one-click Pathao courier pickup creation</div></div></div>
+            <div class="module-row"><div class="m-dot" style="background:#f59e0b"></div><div><div class="m-name">Receipts & Documents</div><div class="m-desc">Automatic PDF and Word receipt generation — standard invoice and gift receipt variants</div></div></div>
+            <div class="module-row"><div class="m-dot" style="background:#a78bfa"></div><div><div class="m-name">Analytics & Expenses</div><div class="m-desc">Revenue/profit trends, product performance, expense tracking with image attachments, and business summary</div></div></div>
+          </div>
+        </div>
+      </div>
+
       <div class="p-card" style="--ac:#00e5ff" data-cat="platform">
-        <div class="p-top"><div class="p-icon">🔗</div><span class="p-badge b-platform">Platform</span></div>
-        <div class="p-title">Photon</div>
+        <div class="p-top"><div class="p-icon"><i class="fas fa-link"></i></div><div class="p-title" style="flex:1;margin:0 0 0 12px;font-size:15px">Console</div><span class="p-badge b-platform">Platform</span></div>
         <div class="p-desc">Advanced network link monitoring with SSH device access, real-time Telegram alerts, and live device configuration retrieval via jump-host tunnelling.</div>
         <ul class="p-feats"><li>Interactive PyVis topology with custom color schemes</li><li>SSH via Paramiko through jump host for live data pulls</li><li>Telegram bot for real-time incident alerts</li><li>Concurrent processing with ThreadPoolExecutor</li></ul>
         <div class="p-tags"><span class="tag">Paramiko</span><span class="tag">NetworkX</span><span class="tag">Telegram Bot</span><span class="tag">Selenium</span><span class="tag">GeoPy</span></div>
       </div>
 
       <div class="p-card" style="--ac:#2979ff" data-cat="platform">
-        <div class="p-top"><div class="p-icon">📡</div><span class="p-badge b-platform">Platform</span></div>
-        <div class="p-title">LinkTrack</div>
+        <div class="p-top"><div class="p-icon"><i class="fas fa-satellite-dish"></i></div><div class="p-title" style="flex:1;margin:0 0 0 12px;font-size:15px">LinkTrack</div><span class="p-badge b-platform">Platform</span></div>
         <div class="p-desc">Core network link tracking platform with graph-based topology visualisation, data pipeline integration, and multi-path analysis with Telegram alerting.</div>
         <ul class="p-feats"><li>Dynamic graph topology with path highlighting</li><li>Data pipeline for live network feeds</li><li>Multi-path visualisation with secondary path overlays</li><li>Telegram notification bot for alert dispatch</li></ul>
         <div class="p-tags"><span class="tag">NetworkX</span><span class="tag">PyVis</span><span class="tag">Data Pipeline</span><span class="tag">Telegram Bot</span></div>
       </div>
 
       <div class="p-card" style="--ac:#00e676" data-cat="platform">
-        <div class="p-top"><div class="p-icon">🗺️</div><span class="p-badge b-platform">Platform</span></div>
-        <div class="p-title">PoP Map</div>
+        <div class="p-top"><div class="p-icon"><i class="fas fa-map"></i></div><div class="p-title" style="flex:1;margin:0 0 0 12px;font-size:15px">PoP Map</div><span class="p-badge b-platform">Platform</span></div>
         <div class="p-desc">Point-of-Presence lifecycle management with 3D geospatial mapping, site comparison, hostname change detection, and full ticketing workflow.</div>
         <ul class="p-feats"><li>Pydeck 3D geospatial map with site clustering</li><li>Automated hostname change detection across daily snapshots</li><li>Ticket tracking database with JSON persistence</li><li>Parallel data retrieval for fast data refreshes</li></ul>
         <div class="p-tags"><span class="tag">Pydeck</span><span class="tag">Plotly</span><span class="tag">GeoPandas</span><span class="tag">Data Pipeline</span></div>
       </div>
 
       <div class="p-card" style="--ac:#ffab00" data-cat="platform">
-        <div class="p-top"><div class="p-icon">✈️</div><span class="p-badge b-platform">Platform</span></div>
-        <div class="p-title">TaskPilot</div>
+        <div class="p-top"><div class="p-icon"><i class="fas fa-paper-plane"></i></div><div class="p-title" style="flex:1;margin:0 0 0 12px;font-size:15px">TaskPilot</div><span class="p-badge b-platform">Platform</span></div>
         <div class="p-desc">Departmental workflow management system with assignment tracking, priority management, SLA timers, and local database backend.</div>
         <ul class="p-feats"><li>Work-plan assignment tracking with SLA countdown</li><li>Dependency and submission status visibility</li><li>Animation integration for polished UX</li><li>Image-based report generation</li></ul>
         <div class="p-tags"><span class="tag">Database</span><span class="tag">Pandas</span><span class="tag">Pillow</span><span class="tag">Lottie</span></div>
       </div>
 
       <div class="p-card" style="--ac:#ff1744" data-cat="auto">
-        <div class="p-top"><div class="p-icon">⚡</div><span class="p-badge b-auto">Automation</span></div>
-        <div class="p-title">Catalyst</div>
+        <div class="p-top"><div class="p-icon"><i class="fas fa-bolt"></i></div><div class="p-title" style="flex:1;margin:0 0 0 12px;font-size:15px">Catalyst</div><span class="p-badge b-auto">Automation</span></div>
         <div class="p-desc">Network automation powerhouse for bulk device operations via SSH, browser automation for portal workflows, and device management behind a secure authenticated interface.</div>
         <ul class="p-feats"><li>Bulk SSH command execution via Paramiko</li><li>Browser automation for portal workflows</li><li>Admin panel with audit trail logging</li><li>Concurrent tasks with ThreadPoolExecutor</li></ul>
         <div class="p-tags"><span class="tag">Paramiko</span><span class="tag">Selenium</span><span class="tag">Automation</span><span class="tag">BeautifulSoup</span></div>
       </div>
 
       <div class="p-card" style="--ac:#ce93d8" data-cat="platform">
-        <div class="p-top"><div class="p-icon">📍</div><span class="p-badge b-platform">Platform</span></div>
-        <div class="p-title">Connectivity Type Analyzer</div>
+        <div class="p-top"><div class="p-icon"><i class="fas fa-location-dot"></i></div><div class="p-title" style="flex:1;margin:0 0 0 12px;font-size:15px">Connectivity Type Analyzer</div><span class="p-badge b-platform">Platform</span></div>
         <div class="p-desc">Geospatial tool classifying connectivity types across service zones using Shapely point-in-polygon coverage, rendered on an interactive Pydeck map.</div>
         <ul class="p-feats"><li>Point-in-polygon coverage classification with Shapely</li><li>Pydeck interactive 3D map with layer controls</li><li>GeoPandas spatial data processing pipeline</li><li>JSON activity logging with user audit trail</li></ul>
         <div class="p-tags"><span class="tag">Pydeck</span><span class="tag">GeoPandas</span><span class="tag">Shapely</span><span class="tag">GeoPy</span></div>
       </div>
 
       <div class="p-card" style="--ac:#00e676" data-cat="auto">
-        <div class="p-top"><div class="p-icon">🗼</div><span class="p-badge b-auto">Automation</span></div>
-        <div class="p-title">Outage & KPI Reporter</div>
+        <div class="p-top"><div class="p-icon"><i class="fas fa-tower-cell"></i></div><div class="p-title" style="flex:1;margin:0 0 0 12px;font-size:15px">Outage & KPI Reporter</div><span class="p-badge b-auto">Automation</span></div>
         <div class="p-desc">Automated daily KPI report generation system that ingests performance data, processes metrics, and produces formatted downloadable output , eliminating manual report preparation.</div>
         <ul class="p-feats"><li>Data processing with template filling for reports</li><li>KPI metric extraction with regex-based parsing</li><li>Admin-gated file manager for archive browsing</li><li>Branded downloadable output generation</li></ul>
         <div class="p-tags"><span class="tag">Data Processing</span><span class="tag">Pandas</span><span class="tag">Report Generation</span></div>
       </div>
 
       <div class="p-card" style="--ac:#ffab00" data-cat="auto">
-        <div class="p-top"><div class="p-icon">📜</div><span class="p-badge b-auto">Automation</span></div>
-        <div class="p-title">Script Snatcher</div>
+        <div class="p-top"><div class="p-icon"><i class="fas fa-scroll"></i></div><div class="p-title" style="flex:1;margin:0 0 0 12px;font-size:15px">Script Snatcher</div><span class="p-badge b-auto">Automation</span></div>
         <div class="p-desc">Internal script discovery platform. Engineers search a centralized repository by keyword and download exactly what they need, with full search and download audit logging.</div>
         <ul class="p-feats"><li>Historical device configuration</li><li>Repository keyword search and file retrieval</li><li>Persistent search and download count audit log</li><li>Admin analytics view for usage tracking</li></ul>
         <div class="p-tags"><span class="tag">Data Repository</span><span class="tag">Pandas</span><span class="tag">Logging</span></div>
@@ -486,7 +495,7 @@ footer em{color:var(--muted);font-style:normal}
     <p class="s-sub reveal">Beyond the code , hands-on server-side infrastructure setup and management.</p>
     <div class="infra-grid">
       <div class="infra-card reveal">
-        <div class="infra-icon">🖥️</div>
+        <div class="infra-icon"><i class="fas fa-server"></i></div>
         <div class="infra-title">Proxmox VE</div>
         <div class="infra-desc">Designed and deployed bare-metal Proxmox Virtual Environment setups for hosting internal tools and services , full server lifecycle from OS installation to network configuration.</div>
         <ul class="infra-list">
@@ -498,7 +507,7 @@ footer em{color:var(--muted);font-style:normal}
         </ul>
       </div>
       <div class="infra-card reveal reveal-delay-1">
-        <div class="infra-icon">⚙️</div>
+        <div class="infra-icon"><i class="fas fa-gear"></i></div>
         <div class="infra-title">VM &amp; Logical Networking</div>
         <div class="infra-desc">Provisioned and managed Virtual Machines for Streamlit apps, internal services, and development environments , with logical network separation and routing between them.</div>
         <ul class="infra-list">
@@ -521,24 +530,28 @@ footer em{color:var(--muted);font-style:normal}
     <h2 class="s-title reveal">Technologies</h2>
     <p class="s-sub reveal">The full toolkit across all projects and infrastructure work.</p>
     <div class="skills-grid">
-      <div class="sk-pill reveal"><span class="sk-icon">🐍</span><div><div class="sk-name">Python</div><div class="sk-cat">Core language</div></div></div>
-      <div class="sk-pill reveal"><span class="sk-icon">🎈</span><div><div class="sk-name">Streamlit</div><div class="sk-cat">Web UI framework</div></div></div>
-      <div class="sk-pill reveal"><span class="sk-icon">🕸️</span><div><div class="sk-name">NetworkX</div><div class="sk-cat">Graph analysis</div></div></div>
-      <div class="sk-pill reveal"><span class="sk-icon">🔭</span><div><div class="sk-name">PyVis</div><div class="sk-cat">Graph visualisation</div></div></div>
-      <div class="sk-pill reveal"><span class="sk-icon">🗺️</span><div><div class="sk-name">Pydeck</div><div class="sk-cat">Geospatial maps</div></div></div>
-      <div class="sk-pill reveal"><span class="sk-icon">🌍</span><div><div class="sk-name">GeoPandas</div><div class="sk-cat">Spatial data</div></div></div>
-      <div class="sk-pill reveal"><span class="sk-icon">📐</span><div><div class="sk-name">Shapely</div><div class="sk-cat">Geometry engine</div></div></div>
-      <div class="sk-pill reveal"><span class="sk-icon">📊</span><div><div class="sk-name">Plotly</div><div class="sk-cat">Interactive charts</div></div></div>
-      <div class="sk-pill reveal"><span class="sk-icon">🐼</span><div><div class="sk-name">Pandas</div><div class="sk-cat">Data processing</div></div></div>
-      <div class="sk-pill reveal"><span class="sk-icon">🔑</span><div><div class="sk-name">Paramiko (SSH)</div><div class="sk-cat">Device automation</div></div></div>
-      <div class="sk-pill reveal"><span class="sk-icon">🤖</span><div><div class="sk-name">Selenium</div><div class="sk-cat">Browser automation</div></div></div>
-      <div class="sk-pill reveal"><span class="sk-icon">🗄️</span><div><div class="sk-name">SQLite</div><div class="sk-cat">Local database</div></div></div>
-      <div class="sk-pill reveal"><span class="sk-icon">📁</span><div><div class="sk-name">FTP / ftplib</div><div class="sk-cat">Data transport</div></div></div>
-      <div class="sk-pill reveal"><span class="sk-icon">📣</span><div><div class="sk-name">Telegram Bot API</div><div class="sk-cat">Alerting</div></div></div>
-      <div class="sk-pill reveal"><span class="sk-icon">📗</span><div><div class="sk-name">openpyxl</div><div class="sk-cat">Excel automation</div></div></div>
-      <div class="sk-pill reveal"><span class="sk-icon">🌐</span><div><div class="sk-name">BeautifulSoup</div><div class="sk-cat">Web scraping</div></div></div>
-      <div class="sk-pill reveal"><span class="sk-icon">🖥️</span><div><div class="sk-name">Proxmox VE</div><div class="sk-cat">Hypervisor</div></div></div>
-      <div class="sk-pill reveal"><span class="sk-icon">⚙️</span><div><div class="sk-name">Linux / Ubuntu</div><div class="sk-cat">Server OS</div></div></div>
+      <div class="sk-pill reveal"><span class="sk-icon"><i class="fab fa-python"></i></span><div><div class="sk-name">Python</div><div class="sk-cat">Core language</div></div></div>
+      <div class="sk-pill reveal"><span class="sk-icon"><i class="fas fa-gauge-high"></i></span><div><div class="sk-name">Streamlit</div><div class="sk-cat">Web UI framework</div></div></div>
+      <div class="sk-pill reveal"><span class="sk-icon"><i class="fas fa-flask"></i></span><div><div class="sk-name">Flask</div><div class="sk-cat">Web app framework</div></div></div>
+      <div class="sk-pill reveal"><span class="sk-icon"><i class="fas fa-diagram-project"></i></span><div><div class="sk-name">NetworkX</div><div class="sk-cat">Graph analysis</div></div></div>
+      <div class="sk-pill reveal"><span class="sk-icon"><i class="fas fa-eye"></i></span><div><div class="sk-name">PyVis</div><div class="sk-cat">Graph visualisation</div></div></div>
+      <div class="sk-pill reveal"><span class="sk-icon"><i class="fas fa-map"></i></span><div><div class="sk-name">Pydeck</div><div class="sk-cat">Geospatial maps</div></div></div>
+      <div class="sk-pill reveal"><span class="sk-icon"><i class="fas fa-globe"></i></span><div><div class="sk-name">GeoPandas</div><div class="sk-cat">Spatial data</div></div></div>
+      <div class="sk-pill reveal"><span class="sk-icon"><i class="fas fa-ruler-combined"></i></span><div><div class="sk-name">Shapely</div><div class="sk-cat">Geometry engine</div></div></div>
+      <div class="sk-pill reveal"><span class="sk-icon"><i class="fas fa-chart-bar"></i></span><div><div class="sk-name">Plotly</div><div class="sk-cat">Interactive charts</div></div></div>
+      <div class="sk-pill reveal"><span class="sk-icon"><i class="fas fa-table"></i></span><div><div class="sk-name">Pandas</div><div class="sk-cat">Data processing</div></div></div>
+      <div class="sk-pill reveal"><span class="sk-icon"><i class="fas fa-key"></i></span><div><div class="sk-name">Paramiko (SSH)</div><div class="sk-cat">Device automation</div></div></div>
+      <div class="sk-pill reveal"><span class="sk-icon"><i class="fas fa-robot"></i></span><div><div class="sk-name">Selenium</div><div class="sk-cat">Browser automation</div></div></div>
+      <div class="sk-pill reveal"><span class="sk-icon"><i class="fas fa-database"></i></span><div><div class="sk-name">SQLite</div><div class="sk-cat">Local database</div></div></div>
+      <div class="sk-pill reveal"><span class="sk-icon"><i class="fas fa-folder"></i></span><div><div class="sk-name">FTP / ftplib</div><div class="sk-cat">Data transport</div></div></div>
+      <div class="sk-pill reveal"><span class="sk-icon"><i class="fas fa-bell"></i></span><div><div class="sk-name">Telegram Bot API</div><div class="sk-cat">Alerting</div></div></div>
+      <div class="sk-pill reveal"><span class="sk-icon"><i class="fas fa-file-excel"></i></span><div><div class="sk-name">openpyxl</div><div class="sk-cat">Excel automation</div></div></div>
+      <div class="sk-pill reveal"><span class="sk-icon"><i class="fas fa-globe"></i></span><div><div class="sk-name">BeautifulSoup</div><div class="sk-cat">Web scraping</div></div></div>
+      <div class="sk-pill reveal"><span class="sk-icon"><i class="fas fa-image"></i></span><div><div class="sk-name">Pillow</div><div class="sk-cat">Image processing</div></div></div>
+      <div class="sk-pill reveal"><span class="sk-icon"><i class="fas fa-file-pdf"></i></span><div><div class="sk-name">FPDF / ReportLab</div><div class="sk-cat">PDF generation</div></div></div>
+      <div class="sk-pill reveal"><span class="sk-icon"><i class="fas fa-file-word"></i></span><div><div class="sk-name">python-docx</div><div class="sk-cat">Word documents</div></div></div>
+      <div class="sk-pill reveal"><span class="sk-icon"><i class="fas fa-server"></i></span><div><div class="sk-name">Proxmox VE</div><div class="sk-cat">Hypervisor</div></div></div>
+      <div class="sk-pill reveal"><span class="sk-icon"><i class="fas fa-gear"></i></span><div><div class="sk-name">Linux / Ubuntu</div><div class="sk-cat">Server OS</div></div></div>
     </div>
   </div>
 </section>
@@ -552,7 +565,7 @@ footer em{color:var(--muted);font-style:normal}
     <div class="awards-grid">
       <div class="award-card reveal" style="grid-column:1 / -1;border-color:rgba(0,229,255,.3);background:linear-gradient(135deg,rgba(0,229,255,.05) 0%,var(--card) 60%);position:relative;overflow:hidden;">
         <div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--cyan),transparent);"></div>
-        <div class="award-icon">🎓</div>
+        <div class="award-icon"><i class="fas fa-graduation-cap"></i></div>
         <div class="award-title" style="font-size:16px;color:var(--cyan)">Master of Science - Electrical &amp; Computer Engineering</div>
         <div class="award-body">
           <strong style="color:var(--text);display:block;margin-bottom:6px">Toronto Metropolitan University · Canada · January, 2022 - August, 2023</strong>
@@ -563,17 +576,17 @@ footer em{color:var(--muted);font-style:normal}
         </div>
       </div>
       <div class="award-card reveal reveal-delay-1">
-        <div class="award-icon">🏆</div>
+        <div class="award-icon"><i class="fas fa-trophy"></i></div>
         <div class="award-title">2nd Position, Best Poster</div>
         <div class="award-body">Dr. Anwarul Abedin Scholar Grant · 2nd International Conference on Robotics, Electrical and Signal Processing Techniques (ICREST'21) · January 2021 · IEEE Bangladesh</div>
       </div>
       <div class="award-card reveal reveal-delay-2">
-        <div class="award-icon">📜</div>
+        <div class="award-icon"><i class="fas fa-scroll"></i></div>
         <div class="award-title">Research Paper Publication</div>
         <div class="award-body">Published in IEEE Xplorer: "An IoT Based Smart Irrigation System" · Demonstrating applied research capabilities in IoT and embedded systems. Link: https://ieeexplore.ieee.org/document/9331092 </div>
       </div>
       <div class="award-card reveal reveal-delay-3">
-        <div class="award-icon">⚡</div>
+        <div class="award-icon"><i class="fas fa-bolt"></i></div>
         <div class="award-title">Certification: Lightning & Electrical Surge Protection</div>
         <div class="award-body">Grounding, Bonding, Training · nVent ERICO (USA) at Bangladesh Air Force Base · August 2019</div>
       </div>
@@ -615,11 +628,11 @@ footer em{color:var(--muted);font-style:normal}
     <h2 class="s-title reveal">Interests</h2>
     <p class="s-sub reveal">Beyond engineering , what drives my curiosity and passion.</p>
     <div class="interests-grid">
-      <div class="interest-pill reveal"><span class="interest-icon">📸</span><div>Photography</div></div>
-      <div class="interest-pill reveal reveal-delay-1"><span class="interest-icon">🐾</span><div>Animal Lover</div></div>
-      <div class="interest-pill reveal reveal-delay-2"><span class="interest-icon">✈️</span><div>Travelling</div></div>
-      <div class="interest-pill reveal reveal-delay-3"><span class="interest-icon">🚗</span><div>Car Enthusiast</div></div>
-      <div class="interest-pill reveal reveal-delay-4"><span class="interest-icon">⚽</span><div>Football</div></div>
+      <div class="interest-pill reveal"><span class="interest-icon"><i class="fas fa-camera"></i></span><div>Photography</div></div>
+      <div class="interest-pill reveal reveal-delay-1"><span class="interest-icon"><i class="fas fa-paw"></i></span><div>Animal Lover</div></div>
+      <div class="interest-pill reveal reveal-delay-2"><span class="interest-icon"><i class="fas fa-plane"></i></span><div>Travelling</div></div>
+      <div class="interest-pill reveal reveal-delay-3"><span class="interest-icon"><i class="fas fa-car"></i></span><div>Car Enthusiast</div></div>
+      <div class="interest-pill reveal reveal-delay-4"><span class="interest-icon"><i class="fas fa-futbol"></i></span><div>Football</div></div>
     </div>
   </div>
 </section>
@@ -633,8 +646,8 @@ footer em{color:var(--muted);font-style:normal}
       <p>Open to collaboration, freelance tool-building, or just a conversation about network engineering and Python automation.</p>
       <div class="hero-actions" style="justify-content:center">
         <a class="btn btn-primary" href="mailto:shadmangawhar@gmail.com">Send an Email ↗</a>
-        <a class="btn btn-outline" href="https://linkedin.com/in/shadman-gawhar" target="_blank">💼 LinkedIn ↗</a>
-        <a class="btn btn-outline" href="tel:+8801730031267" target="_blank">📞 Phone ↗</a>      
+        <a class="btn btn-outline" href="https://www.linkedin.com/in/sgawhar009/" target="_blank"><i class="fas fa-briefcase"></i> LinkedIn ↗</a>
+        <a class="btn btn-outline" href="tel:+8801730031267" target="_blank"><i class="fas fa-phone"></i> Phone ↗</a>      
       </div>
     </div>
   </div>
